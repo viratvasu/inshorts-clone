@@ -1,0 +1,38 @@
+.topics-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+    padding:10px 0;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+    width:max-content;
+}
+.topics-container-container{
+    width:100%;
+    overflow-x: auto;
+}
+.topics-container-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .topics-container-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.topics-container .topic{
+    padding: 0 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color:var(--text-color);
+    transition: all 0.3s;
+}
+.topics-container .topic:hover{
+    background-color: var(--second-text-color);
+    color:#fff;
+}
+.topics-container .active{
+    background-color: var(--second-text-color);
+    color:#fff;
+}
